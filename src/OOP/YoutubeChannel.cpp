@@ -6,9 +6,11 @@ using namespace std;
 class YouTubeChannel {
 private:
     string Name;
-    string OwnerName;
     int SubscribersCount;
     list<string> PublishedVideos;
+
+protected:
+    string OwnerName;
 
 public:
     YouTubeChannel(string name, string ownerName) {
@@ -55,11 +57,20 @@ class CookingYoutubeChannel : public YouTubeChannel {
 public:
     CookingYoutubeChannel(string name, string ownerName): YouTubeChannel(name, ownerName) {
     }
+
+    void Pratice() {
+        cout << OwnerName << " is practicing cooking, learning new recipesm, experimenting with spices..." << endl;
+    }
 };
 
 int main() {
     CookingYoutubeChannel amyChannel("Amy's kitchen", "Amy");
+    amyChannel.InsertVideo("Apple pie");
+    amyChannel.InsertVideo("Chocolate cake");
+    amyChannel.Subscribe();
+    amyChannel.Subscribe();
     amyChannel.GetInfo();
+    amyChannel.Pratice();
 
     return 0;
 }
