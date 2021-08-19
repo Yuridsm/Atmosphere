@@ -16,9 +16,7 @@ public:
     }
 };
 
-
 int main() {
     Instrument * i1 = new Accordion();
     i1->MakeSound();
-
 }
