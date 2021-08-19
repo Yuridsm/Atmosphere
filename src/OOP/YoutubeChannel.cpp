@@ -100,8 +100,6 @@ int main() {
     charliePuthChannel.Practice();
     charliePuthChannel.Practice();
     charliePuthChannel.Practice();
-    charliePuthChannel.Practice();
-    charliePuthChannel.Practice();
 
     YouTubeChannel* yt1 = &amyChannel;
     YouTubeChannel* yt2 = &charliePuthChannel; 
