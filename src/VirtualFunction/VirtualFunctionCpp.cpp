@@ -12,7 +12,7 @@ public:
 class Accordion : public Instrument {
 public:
     void MakeSound() {
-        cout << "Accordion playing...\n";
+        cout << "Accordion playing..." << endl;
     }
 };
 
