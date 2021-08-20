@@ -4,8 +4,13 @@ using namespace std;
 
 class Instrument {
 public:
-    virtual void MakeSound() {
-        cout << "Instrument playing.\n";
+    virtual void MakeSound() = 0;
+};
+
+class Piano : public Instrument {
+public:
+    void MakeSound() {
+        cout << "Piano playing..." << endl;
     }
 };
 
@@ -19,4 +24,7 @@ public:
 int main() {
     Instrument * i1 = new Accordion();
     i1->MakeSound();
+
+    Instrument * i2 = new Piano();
+    i2->MakeSound();
 }
