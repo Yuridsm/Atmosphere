@@ -23,8 +23,14 @@ public:
 
 int main() {
     Instrument * i1 = new Accordion();
-    i1->MakeSound();
 
     Instrument * i2 = new Piano();
-    i2->MakeSound();
+
+    Instrument* instrument[2] = { i1, i2 };
+
+    //Polymorphism
+    for (int i = 0; i < 2; i++)
+    {
+        instrument[i]->MakeSound();
+    }
 }
