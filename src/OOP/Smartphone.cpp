@@ -6,12 +6,17 @@ using namespace std;
 class Smartphone {
 public:
     virtual void TakeASelfie() = 0;
+    virtual void MakeACall() = 0;
 };
 
 class Xioami : public Smartphone {
 public:
     void TakeASelfie() {
         cout << "Android selfie\n";
+    }
+
+    void MakeACall() {
+        cout << "Adroid is making a call\n";
     }
 };
 
@@ -20,12 +25,18 @@ public:
     void TakeASelfie() {
         cout << "iOS selfie\n";
     }
+    void MakeACall() {
+        cout << "iOS is making a call\n";
+    }
 };
 
 class GalaxyA50 : public Smartphone {
 public:
     void TakeASelfie() {
         cout << "GalaxyA50 selfie\n";
+    }
+    void MakeACall() {
+        cout << "GalaxyA50 is making a call\n";
     }
 };
 
@@ -37,4 +48,8 @@ int main() {
     s1->TakeASelfie();
     s2->TakeASelfie();
     s3->TakeASelfie();
+
+    s1->MakeACall();
+    s2->MakeACall();
+    s3->MakeACall();
 }
