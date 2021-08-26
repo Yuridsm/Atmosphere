@@ -14,5 +14,5 @@ int main() {
     if(&n == ptr) {
         cout << "The same address of n variable is ptr value" << endl;
     }
-    
+
 }
