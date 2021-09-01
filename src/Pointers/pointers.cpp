@@ -19,10 +19,15 @@ void printOutDoubleNumber(double * prt) {
     cout << *prt << endl;
 }
 
-void printOut(void * prt) {
-    
+void printOut(void * ptr, char type) {
+    switch(type) {
+        case 'i':
+            cout << *((int*)ptr) << endl;
+            break;
+        case 'c':
+            cout << *((char*)ptr) << endl;
+    }
 }
-
 
 int main() {
 
@@ -30,6 +35,8 @@ int main() {
     float weight = 56.4;
     double height = 1.75;
     char letter = 'Y';
+
+    printOut(&letter, 'c');
     
     printOutIntNumber(&number);
     printOutFloatNumber(&weight);
