@@ -36,6 +36,7 @@ int main() {
     double height = 1.75;
     char letter = 'Y';
 
+    printOut(&number, 'i');
     printOut(&letter, 'c');
     
     printOutIntNumber(&number);
