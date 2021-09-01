@@ -26,6 +26,7 @@ void printOut(void * ptr, char type) {
             break;
         case 'c':
             cout << *((char*)ptr) << endl;
+            break;
     }
 }
 
