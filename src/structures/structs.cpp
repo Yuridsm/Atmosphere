@@ -50,10 +50,23 @@ void print_address(const Address& r) {
     std::cout << r.zip << std::endl;
 }
 
+// Objects of structure types can be assigned, passed as function arguments, and returned as the result from a function.
+Address current;
+
+Address set_current(Address next) {
+    Address prev = current;
+    current = next;
+    return prev;
+}
+
 int main() {
     Foo();
     Address adr = Init();
     point_address(&adr);
+
+    set_current(adr);
+
+    std::cout << "Name: " << current.name << std::endl;
 
     return 0;
 }
