@@ -59,6 +59,12 @@ Address set_current(Address next) {
     return prev;
 }
 
+struct Time{
+    int value;
+    char hour;
+    char seq;
+};
+
 int main() {
     Foo();
     Address adr = Init();
@@ -67,6 +73,9 @@ int main() {
     set_current(adr);
 
     std::cout << "Name: " << current.name << std::endl;
+
+    // Analyzing size of struct 
+    std::cout << sizeof(Time) << std::endl;
 
     return 0;
 }
