@@ -20,28 +20,29 @@ void Foo() {
 }
 
 // Another way that we can initializate variable of Address type 
-void Init() {
+Address Init() {
     Address jd = {
         "Yuri Melo",
         23,
         "Rua Yuri S. Melo",
         "Batalha",
-        {'A', 'L'},
+        {'A','L'},
         "57420-000"
     };
 
-    std::cout << "Name: " << jd.name << std::endl;
-    std::cout << "Number: " << jd.number << std::endl;
-    std::cout << "Street: " << jd.street << std::endl;
-    std::cout << "Town: " << jd.town << std::endl;
-    std::cout << "State: " << jd.state << std::endl;
-    std::cout << "Zip: " << jd.zip << std::endl;
+    return jd;
+}
+
+// By using pointers
+void point_address(Address *p) {
+    std::cout << "Name: " << p->name << std::endl;
+    std::cout << "zip: " << (*p).zip << std::endl;
 }
 
 int main() {
     Foo();
-    std::cout << "\n\n" << std::endl;
-    Init();
+    Address adr = Init();
+    point_address(&adr);
 
     return 0;
 }
