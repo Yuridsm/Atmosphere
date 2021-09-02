@@ -37,6 +37,7 @@ Address Init() {
 void point_address(Address *p) {
     std::cout << "Name: " << p->name << std::endl;
     std::cout << "zip: " << (*p).zip << std::endl;
+    std::cout << "State: " << (*p).state[0] << (*p).state[1] << std::endl;
 }
 
 int main() {
