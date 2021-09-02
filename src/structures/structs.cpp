@@ -40,6 +40,16 @@ void point_address(Address *p) {
     std::cout << "State: " << (*p).state[0] << (*p).state[1] << std::endl;
 }
 
+// Struct passed by reference and accessed using the . (dot notation)
+void print_address(const Address& r) {
+    std::cout << r.name << std::endl;
+    std::cout << r.number << std::endl;
+    std::cout << r.state << std::endl;
+    std::cout << r.street << std::endl;
+    std::cout << r.town << std::endl;
+    std::cout << r.zip << std::endl;
+}
+
 int main() {
     Foo();
     Address adr = Init();
