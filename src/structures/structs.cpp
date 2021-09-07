@@ -67,13 +67,14 @@ struct Time{
 
 struct Person {
     int num;
+    const char *name;
 };
 
 int main() {
     Foo();
     Address adr = Init();
     point_address(&adr);
-    Person yuri = { 90 };
+    Person yuri = { 90, "fgdsfsdfsdf" };
 
     set_current(adr);
 
@@ -82,11 +83,11 @@ int main() {
     // Analyzing size of struct 
     std::cout << sizeof(Time) << std::endl;
 
+    // Accessing by reference
     std::cout << yuri.num << std::endl;
+    std::cout << yuri.name << std::endl;
     yuri.num = 80;
     std::cout << yuri.num << std::endl;
-
-
 
     return 0;
 }
