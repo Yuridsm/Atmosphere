@@ -6,7 +6,7 @@ struct Address {
     const char* street; // Rua Yuri S. Melo
     const char* town;   // Batalha
     char state[2];      // AL
-    const char* zip;    //"57420-000"
+    const char* zip;    // "57420-000"
 };
 
 // We can initializate like this
@@ -65,10 +65,15 @@ struct Time{
     char seq;
 };
 
+struct Person {
+    int num;
+};
+
 int main() {
     Foo();
     Address adr = Init();
     point_address(&adr);
+    Person yuri = { 90 };
 
     set_current(adr);
 
@@ -76,6 +81,12 @@ int main() {
 
     // Analyzing size of struct 
     std::cout << sizeof(Time) << std::endl;
+
+    std::cout << yuri.num << std::endl;
+    yuri.num = 80;
+    std::cout << yuri.num << std::endl;
+
+
 
     return 0;
 }
