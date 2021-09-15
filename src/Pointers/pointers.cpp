@@ -39,6 +39,14 @@ int nLetters(const char* name) {
     return amount;
 }
 
+int nNumbers(int numbers) {
+    return numbers;
+}
+
+int Bar(int *number) {
+    return *number;
+}
+
 int main() {
 
     int number = 8;
@@ -55,6 +63,14 @@ int main() {
     printOutLetter(&letter);
 
     int (*func)(const char*);
+    int (*intFunc)(int);
+    int (*ptrToFunc)(int*);
+    
     func = &nLetters;
+    intFunc = &nNumbers;
+    ptrToFunc = &Bar;
+
+    cout << "Number: " << intFunc(435) << endl;
     cout << "Letter amount: " << func("Yuri") << endl;
+    cout << "Number: " << ptrToFunc(&number) << endl;
 }
