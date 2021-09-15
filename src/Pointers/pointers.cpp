@@ -1,5 +1,6 @@
 #include <iostream>
 #include <typeinfo>
+#include <string.h>
 
 using namespace std;
 
@@ -30,6 +31,14 @@ void printOut(void * ptr, char type) {
     }
 }
 
+int nLetters(const char* name) {
+    int amount = 1;
+    for(int i = 0; i < strlen(name); i++) {
+        amount += i;
+    }
+    return amount;
+}
+
 int main() {
 
     int number = 8;
@@ -44,4 +53,8 @@ int main() {
     printOutFloatNumber(&weight);
     printOutDoubleNumber(&height);
     printOutLetter(&letter);
+
+    int (*func)(const char*);
+    func = &nLetters;
+    cout << "Letter amount: " << func("Yuri") << endl;
 }
