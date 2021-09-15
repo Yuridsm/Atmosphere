@@ -65,7 +65,7 @@ int main() {
     int (*func)(const char*);
     int (*intFunc)(int);
     int (*ptrToFunc)(int*);
-    
+
     func = &nLetters;
     intFunc = &nNumbers;
     ptrToFunc = &Bar;
@@ -73,4 +73,8 @@ int main() {
     cout << "Number: " << intFunc(435) << endl;
     cout << "Letter amount: " << func("Yuri") << endl;
     cout << "Number: " << ptrToFunc(&number) << endl;
+
+    // nullptr - represents null pointer
+    int* pi = nullptr;
+    
 }
