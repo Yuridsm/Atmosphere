@@ -16,10 +16,49 @@
     <Filter Include="Source Files\Arrays">
       <UniqueIdentifier>{7b6710eb-cb8d-4045-8ff2-a90d547c69dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\OOP">
+      <UniqueIdentifier>{3c876abd-6f4e-4a15-b24f-a3bb836509ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Pointers">
+      <UniqueIdentifier>{9e2f2a2d-4d10-4654-8eb1-49b24995c42e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TypeAndDeclarations">
+      <UniqueIdentifier>{32be4883-b46c-4f42-b9d1-53b5044ad68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VirtualFunction">
+      <UniqueIdentifier>{768fc39e-4679-4025-958c-d762699a6d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Structures">
+      <UniqueIdentifier>{ebe12e4b-d4d6-4a48-a5d8-16a9026a9aa6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="lecture.cpp">
       <Filter>Source Files\Arrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Smartphone.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="YoutubeChannel.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Intro.cpp">
+      <Filter>Source Files\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointers.cpp">
+      <Filter>Source Files\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>Source Files\TypeAndDeclarations</Filter>
+    </ClCompile>
+    <ClCompile Include="VirtualFunctionCpp.cpp">
+      <Filter>Source Files\VirtualFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="NameDeclaration.cpp">
+      <Filter>Source Files\Structures</Filter>
+    </ClCompile>
+    <ClCompile Include="Structss.cpp">
+      <Filter>Source Files\Structures</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

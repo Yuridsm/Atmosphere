@@ -19,7 +19,15 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Intro.cpp" />
     <ClCompile Include="lecture.cpp" />
+    <ClCompile Include="NameDeclaration.cpp" />
+    <ClCompile Include="Pointers.cpp" />
+    <ClCompile Include="Smartphone.cpp" />
+    <ClCompile Include="Structss.cpp" />
+    <ClCompile Include="Types.cpp" />
+    <ClCompile Include="VirtualFunctionCpp.cpp" />
+    <ClCompile Include="YoutubeChannel.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -107,6 +115,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
