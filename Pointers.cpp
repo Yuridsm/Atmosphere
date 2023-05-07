@@ -47,7 +47,7 @@ int Bar(int* number) {
     return *number;
 }
 
-int main() {
+int PointerMain() {
 
     int number = 8;
     float weight = 56.4;
@@ -76,5 +76,5 @@ int main() {
 
     // nullptr - represents null pointer
     int* pi = nullptr;
-
+    return 0;
 }

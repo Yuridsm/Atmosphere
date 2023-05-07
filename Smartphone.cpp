@@ -40,7 +40,7 @@ public:
     }
 };
 
-int main() {
+int SmartphoneMain() {
     Smartphone* s1 = new Xioami();
     Smartphone* s2 = new IPhone();
     Smartphone* s3 = new GalaxyA50();
@@ -52,4 +52,6 @@ int main() {
     s1->MakeACall();
     s2->MakeACall();
     s3->MakeACall();
+
+    return 0;
 }

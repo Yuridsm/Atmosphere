@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int Intromain() {
     int n = 90;
     int* ptr = &n;
 
@@ -14,5 +14,5 @@ int main() {
     if (&n == ptr) {
         cout << "The same address of n variable is ptr value" << endl;
     }
-
+    return 0;
 }

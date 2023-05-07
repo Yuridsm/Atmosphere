@@ -21,7 +21,7 @@ public:
     }
 };
 
-int main() {
+int VirtualMain() {
     Instrument* i1 = new Accordion();
 
     Instrument* i2 = new Piano();
@@ -33,4 +33,6 @@ int main() {
     {
         instrument[i]->MakeSound();
     }
+
+    return 0;
 }

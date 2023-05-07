@@ -86,7 +86,7 @@ public:
     }
 };
 
-int main() {
+int YoutubeMain() {
     CookingYoutubeChannel amyChannel("Amy's kitchen", "Amy");
     SingersYoutubeChannel charliePuthChannel("Charlie Puth", "Charlie Puth");
 

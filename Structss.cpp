@@ -70,7 +70,7 @@ struct Person {
     const char* name;
 };
 
-int main() {
+int StructsMain() {
     Foo();
     Address adr = Init();
     point_address(&adr);
