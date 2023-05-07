@@ -3,3 +3,5 @@ bin/
 .vscode/
 /.vs
 x64/
+Atmosphere.vcxproj.filters
+Atmosphere.vcxproj.user
