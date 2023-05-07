@@ -21,6 +21,7 @@
   <ItemGroup>
     <ClCompile Include="Intro.cpp" />
     <ClCompile Include="lecture.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="NameDeclaration.cpp" />
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="Smartphone.cpp" />
