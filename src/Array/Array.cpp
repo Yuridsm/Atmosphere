@@ -3,7 +3,7 @@
 using namespace std;
 
 // Pointers to arrays
- 
+
 int main() {
     int luckyNumbers[5] = { 1, 2, 3, 4, 5 }; 
     cout << luckyNumbers << endl;
