@@ -34,7 +34,7 @@ Address Init() {
 }
 
 // By using pointers
-void point_address(Address *p) {
+void point_address(Address* p) {
     std::cout << "Name: " << p->name << std::endl;
     std::cout << "zip: " << (*p).zip << std::endl;
     std::cout << "State: " << (*p).state[0] << (*p).state[1] << std::endl;
@@ -59,7 +59,7 @@ Address set_current(Address next) {
     return prev;
 }
 
-struct Time{
+struct Time {
     int value;
     char hour;
     char seq;
@@ -67,7 +67,7 @@ struct Time{
 
 struct Person {
     int num;
-    const char *name;
+    const char* name;
 };
 
 int main() {

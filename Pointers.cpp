@@ -4,36 +4,36 @@
 
 using namespace std;
 
-void printOutIntNumber(int * prt) {
+void printOutIntNumber(int* prt) {
     cout << *prt << endl;
 }
 
-void printOutFloatNumber(float * prt) {
+void printOutFloatNumber(float* prt) {
     cout << *prt << endl;
 }
 
-void printOutLetter(char * prt) {
+void printOutLetter(char* prt) {
     cout << *prt << endl;
 }
 
-void printOutDoubleNumber(double * prt) {
+void printOutDoubleNumber(double* prt) {
     cout << *prt << endl;
 }
 
-void printOut(void * ptr, char type) {
-    switch(type) {
-        case 'i':
-            cout << *((int*)ptr) << endl;
-            break;
-        case 'c':
-            cout << *((char*)ptr) << endl;
-            break;
+void printOut(void* ptr, char type) {
+    switch (type) {
+    case 'i':
+        cout << *((int*)ptr) << endl;
+        break;
+    case 'c':
+        cout << *((char*)ptr) << endl;
+        break;
     }
 }
 
 int nLetters(const char* name) {
     int amount = 1;
-    for(int i = 0; i < strlen(name); i++) {
+    for (int i = 0; i < strlen(name); i++) {
         amount += i;
     }
     return amount;
@@ -43,7 +43,7 @@ int nNumbers(int numbers) {
     return numbers;
 }
 
-int Bar(int *number) {
+int Bar(int* number) {
     return *number;
 }
 
@@ -56,7 +56,7 @@ int main() {
 
     printOut(&number, 'i');
     printOut(&letter, 'c');
-    
+
     printOutIntNumber(&number);
     printOutFloatNumber(&weight);
     printOutDoubleNumber(&height);
@@ -76,5 +76,5 @@ int main() {
 
     // nullptr - represents null pointer
     int* pi = nullptr;
-    
+
 }

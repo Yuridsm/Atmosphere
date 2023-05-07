@@ -22,9 +22,9 @@ public:
 };
 
 int main() {
-    Instrument * i1 = new Accordion();
+    Instrument* i1 = new Accordion();
 
-    Instrument * i2 = new Piano();
+    Instrument* i2 = new Piano();
 
     Instrument* instrument[2] = { i1, i2 };
 

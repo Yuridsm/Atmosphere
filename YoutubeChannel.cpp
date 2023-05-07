@@ -55,7 +55,7 @@ public:
     }
 
     void CheckAnalytics() {
-        if(ContentQuality < 5) {
+        if (ContentQuality < 5) {
             cout << Name << " has a bad quality content" << endl;
         }
         else {
@@ -66,7 +66,7 @@ public:
 
 class CookingYoutubeChannel : public YouTubeChannel {
 public:
-    CookingYoutubeChannel(string name, string ownerName): YouTubeChannel(name, ownerName) {
+    CookingYoutubeChannel(string name, string ownerName) : YouTubeChannel(name, ownerName) {
     }
 
     void Pratice() {
@@ -77,7 +77,7 @@ public:
 
 class SingersYoutubeChannel : public YouTubeChannel {
 public:
-    SingersYoutubeChannel(string name, string ownerName): YouTubeChannel(name, ownerName) {
+    SingersYoutubeChannel(string name, string ownerName) : YouTubeChannel(name, ownerName) {
     }
 
     void Practice() {
@@ -102,7 +102,7 @@ int main() {
     charliePuthChannel.Practice();
 
     YouTubeChannel* yt1 = &amyChannel;
-    YouTubeChannel* yt2 = &charliePuthChannel; 
+    YouTubeChannel* yt2 = &charliePuthChannel;
 
     yt1->CheckAnalytics();
     yt2->CheckAnalytics();

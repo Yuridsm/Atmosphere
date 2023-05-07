@@ -11,11 +11,11 @@ struct Link {
 };
 
 struct List {
-    Link *head;
+    Link* head;
 };
 
 struct Point {
-    int x,y;
+    int x, y;
 };
 
 struct Points {
@@ -25,7 +25,7 @@ struct Points {
 };
 
 int main() {
-    Points x1 { {100, 200} };
-    Points x2 { {1, 2}, {3, 4}};
+    Points x1{ {100, 200} };
+    Points x2{ {1, 2}, {3, 4} };
     return 0;
 }
