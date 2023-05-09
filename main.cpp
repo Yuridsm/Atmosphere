@@ -4,6 +4,8 @@
 #include <iostream>
 #include <iomanip>
 
+#include "IntroToPointers.h"
+
 // Função que criptografa uma string com AES-256-CBC
 std::string encryptAES(const std::string& plaintext, const std::string& key, const std::string& iv) {
     // Configuração do algoritmo AES-256-CBC
@@ -32,7 +34,7 @@ std::string encryptAES(const std::string& plaintext, const std::string& key, con
 }
 
 int main() {
-    std::string key = "mysecretpassword";
+    /*std::string key = "mysecretpassword";
     std::string iv = "initializationvet";
     std::string plaintext = "This is a secret message!";
 
@@ -44,7 +46,12 @@ int main() {
 
     for (const auto& c : ciphertext) {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
-    }
+    }*/
+
+    //ExecuteUseCase();
+    int age = 32'768;
+
+    f(&age);
 
 	return 0;
 }
