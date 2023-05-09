@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Intro.cpp" />
+    <ClCompile Include="IntroToPointers.cpp" />
     <ClCompile Include="lecture.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NameDeclaration.cpp" />
@@ -29,6 +30,9 @@
     <ClCompile Include="Types.cpp" />
     <ClCompile Include="VirtualFunctionCpp.cpp" />
     <ClCompile Include="YoutubeChannel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntroToPointers.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
