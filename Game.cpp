@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Game.h"
 
-void Game::Get(const string& title, float price)
+void Game2::Get(const string& title, float price)
 {
 	name = title;
 	price = price;
@@ -9,14 +9,19 @@ void Game::Get(const string& title, float price)
 	cost = price;
 }
 
-void Game::Update(float price)
+void Game2::Update(float price)
 {
 	price = price;
 	Calculate();
 }
 
-void Game::Play(int time)
+void Game2::Play(int time)
 {
 	hour = hour + time;
 	Calculate();
+}
+
+void Game2::Display()
+{
+	std::cout << "fgsafasdfa" << std::endl;
 }

@@ -2,7 +2,7 @@
 
 using std::string;
 
-class Game {
+class Game2 {
 private:
 	string name;
 	float price;

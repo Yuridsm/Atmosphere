@@ -6,6 +6,7 @@
 
 #include "IntroToPointers.h"
 #include "Structural.h"
+#include "Game.h"
 
 // Função que criptografa uma string com AES-256-CBC
 std::string encryptAES(const std::string& plaintext, const std::string& key, const std::string& iv) {
@@ -49,7 +50,12 @@ int main() {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
     }*/
 
-    Execute();
+    //Execute();
+
+    Game2 gow;
+
+    gow.Get("Gow", 3.14f);
+    gow.Display();
 
 	return 0;
 }

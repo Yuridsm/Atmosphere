@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Intro.cpp" />
     <ClCompile Include="IntroToPointers.cpp" />
     <ClCompile Include="lecture.cpp" />
@@ -33,6 +34,7 @@
     <ClCompile Include="YoutubeChannel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Game.h" />
     <ClInclude Include="IntroToPointers.h" />
     <ClInclude Include="Structural.h" />
   </ItemGroup>
