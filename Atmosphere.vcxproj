@@ -27,12 +27,14 @@
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="Smartphone.cpp" />
     <ClCompile Include="Structss.cpp" />
+    <ClCompile Include="Strutural.cpp" />
     <ClCompile Include="Types.cpp" />
     <ClCompile Include="VirtualFunctionCpp.cpp" />
     <ClCompile Include="YoutubeChannel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntroToPointers.h" />
+    <ClInclude Include="Structural.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
