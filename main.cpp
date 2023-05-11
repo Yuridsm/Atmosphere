@@ -7,6 +7,9 @@
 #include "IntroToPointers.h"
 #include "Structural.h"
 #include "Game.h"
+#include "Coord.h"
+
+using namespace std;
 
 // Função que criptografa uma string com AES-256-CBC
 std::string encryptAES(const std::string& plaintext, const std::string& key, const std::string& iv) {
@@ -52,10 +55,13 @@ int main() {
 
     //Execute();
 
-    Game2 gow;
+    Coord ponto;
 
-    gow.Get("Gow", 3.14f);
-    gow.Display();
+    ponto.MoveTo(10, 10);
+    cout << "( " << ponto.x << ", " << ponto.y << ")" << endl;
+
+    ponto.Translate(2, 5);
+    cout << "( " << ponto.x << ", " << ponto.y << ")" << endl;
 
 	return 0;
 }
