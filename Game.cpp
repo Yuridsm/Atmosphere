@@ -1,6 +1,12 @@
 #include <iostream>
 #include "Game.h"
 
+inline void Game2::Calculate()
+{
+	if (hour > 0)
+		cost = price / hour;
+}
+
 void Game2::Get(const string& title, float price)
 {
 	name = title;
