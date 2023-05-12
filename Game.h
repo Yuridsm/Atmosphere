@@ -9,11 +9,11 @@ private:
 	int hour;
 	float cost;
 
-	void Calculate()
-	{
+	void Calculate();
+	/*{
 		if (hour > 0)
 			cost = price / hour;
-	}
+	}*/
 
 public:
 	void Get(const string & title, float price);
