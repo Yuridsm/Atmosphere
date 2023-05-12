@@ -10,10 +10,6 @@ private:
 	float cost;
 
 	void Calculate();
-	/*{
-		if (hour > 0)
-			cost = price / hour;
-	}*/
 
 public:
 	void Get(const string & title, float price);
@@ -21,3 +17,9 @@ public:
 	void Play(int time);
 	void Display();
 };
+
+inline void Game2::Calculate()
+{
+	if (hour > 0)
+		cost = price / hour;
+}

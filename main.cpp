@@ -58,10 +58,10 @@ int main() {
     Coord ponto;
 
     ponto.MoveTo(10, 10);
-    cout << "( " << ponto.x << ", " << ponto.y << ")" << endl;
+    cout << "( " << ponto.GetX() << ", " << ponto.GetY() << ")" << endl;
 
     ponto.Translate(2, 5);
-    cout << "( " << ponto.x << ", " << ponto.y << ")" << endl;
+    cout << "( " << ponto.GetX() << ", " << ponto.GetY() << ")" << endl;
 
 	return 0;
 }
