@@ -27,7 +27,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NameDeclaration.cpp" />
     <ClCompile Include="Pointers.cpp" />
-    <ClCompile Include="Pontos.cpp" />
     <ClCompile Include="Smartphone.cpp" />
     <ClCompile Include="Structss.cpp" />
     <ClCompile Include="Strutural.cpp" />
