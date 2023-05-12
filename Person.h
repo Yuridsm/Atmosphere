@@ -4,11 +4,11 @@ using std::string;
 
 class Person
 {
-public:
+private:
 	string firstName_;
 	string lastName_;
 
-private:
+public:
 	Person();
 	Person(const string & firstName, const string & lastName);
 	void Display();

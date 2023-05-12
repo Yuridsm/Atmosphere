@@ -8,6 +8,7 @@
 #include "Structural.h"
 #include "Game.h"
 #include "Coord.h"
+#include "Person.h"
 
 using namespace std;
 
@@ -53,15 +54,11 @@ int main() {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
     }*/
 
-    //Execute();
+    Person yuri;
+    Person thamirys = { "Thamirys", "Melo" };
 
-    Coord ponto;
-
-    ponto.MoveTo(10, 10);
-    cout << "( " << ponto.GetX() << ", " << ponto.GetY() << ")" << endl;
-
-    ponto.Translate(2, 5);
-    cout << "( " << ponto.GetX() << ", " << ponto.GetY() << ")" << endl;
-
+    thamirys.Display();
+    thamirys.Formal();
+    
 	return 0;
 }
