@@ -4,11 +4,7 @@
 #include <iostream>
 #include <iomanip>
 
-#include "IntroToPointers.h"
-#include "Structural.h"
 #include "Game.h"
-#include "Coord.h"
-#include "Person.h"
 
 using namespace std;
 
@@ -54,11 +50,8 @@ int main() {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
     }*/
 
-    Person yuri;
-    Person thamirys = { "Thamirys", "Melo" };
-
-    thamirys.Display();
-    thamirys.Formal();
+    Game2 minecraft = Game2("Minecraft");
+    minecraft.Display();
     
 	return 0;
 }

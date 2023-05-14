@@ -1,12 +1,15 @@
 #include <iostream>
 #include "Game.h"
 
+using namespace std;
+
 Game2::Game2()
 {
 	name = "";
 	price = 0;
 	hour = 0;
 	cost = 0;
+	cout << "Building Game2 Object" << endl;
 }
 
 Game2::Game2(const string & title, float value)
@@ -15,6 +18,11 @@ Game2::Game2(const string & title, float value)
 	price = value;
 	hour = 0;
 	cost = value;
+}
+
+Game2::~Game2()
+{
+	cout << "Destruing Game2 Object" << endl;
 }
 
 void Game2::Get(const string& title, float price)
@@ -39,5 +47,5 @@ void Game2::Play(int time)
 
 void Game2::Display()
 {
-	std::cout << "fgsafasdfa" << std::endl;
+	std::cout << name << std::endl;
 }
