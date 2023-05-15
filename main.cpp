@@ -50,19 +50,9 @@ int main() {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
     }*/
 
-    cout << "Init and destroy in 1st scope" << endl;
-
-    {
-        // C++ Object Initialization
-        Game2 minecraft = Game2("Minecraft", 199.99f);
-    }
-
-    cout << "Create and init and destroy in 2nd scope" << endl;
-
-    {
-        Game2 minecraft;
-        minecraft = Game2("My Minecraft", 198.99f);
-    }
+    Game2 game01 = { "Game 01", 12.99f };
+    Game2 game02 = { "Game 02", 12.91f };
+    Game2 game03 = { "Game 03", 12.92f };
 
 	return 0;
 }
