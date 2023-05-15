@@ -50,8 +50,19 @@ int main() {
         std::cout << std::setfill('0') << std::setw(2) << std::uppercase << std::hex << static_cast<int>(c);
     }*/
 
-    Game2 minecraft = Game2("Minecraft");
-    minecraft.Display();
-    
+    cout << "Init and destroy in 1st scope" << endl;
+
+    {
+        // C++ Object Initialization
+        Game2 minecraft = Game2("Minecraft", 199.99f);
+    }
+
+    cout << "Create and init and destroy in 2nd scope" << endl;
+
+    {
+        Game2 minecraft;
+        minecraft = Game2("My Minecraft", 198.99f);
+    }
+
 	return 0;
 }

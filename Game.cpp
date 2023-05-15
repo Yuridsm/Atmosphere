@@ -9,7 +9,8 @@ Game2::Game2()
 	price = 0;
 	hour = 0;
 	cost = 0;
-	cout << "Building Game2 Object" << endl;
+
+	cout << "    - Building Game2 Object with Default Constructor" << endl;
 }
 
 Game2::Game2(const string & title, float value)
@@ -18,11 +19,13 @@ Game2::Game2(const string & title, float value)
 	price = value;
 	hour = 0;
 	cost = value;
+
+	cout << "    - Building Game2 Object with Custom Constructor" << endl;
 }
 
 Game2::~Game2()
 {
-	cout << "Destruing Game2 Object" << endl;
+	cout << "    - Destruing Game2 Object" << endl;
 }
 
 void Game2::Get(const string& title, float price)
