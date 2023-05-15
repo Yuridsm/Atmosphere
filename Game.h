@@ -18,7 +18,7 @@ public:
 	void Get(const string & title, float price);
 	void Update(float price);
 	void Play(int time);
-	void Display();
+	void Display() const;
 };
 
 inline void Game2::Calculate()

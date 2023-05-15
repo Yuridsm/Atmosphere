@@ -48,7 +48,7 @@ void Game2::Play(int time)
 	Calculate();
 }
 
-void Game2::Display()
+void Game2::Display() const
 {
 	std::cout << name << std::endl;
 }
