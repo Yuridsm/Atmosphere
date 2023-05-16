@@ -8,18 +8,20 @@
 
 using namespace std;
 
+const int MAX = 3;
+
 int main() {
 
-	// Non const
-    Game2 game01 { "Game 01", 12.99f };
-	game01.Update(22.99f);
-	game01.Play(2);
-	game01.Display();
+	Game2 collection[MAX] =
+	{
+		Game2("qwe", 4.4f),
+		Game2("asd", 4.4f),
+		Game2("zxc", 4.4f),
+	};
 
-	// Const
-	const Game2 game02{ "Game 02", 12.99f };
-	game01.Display();
+	cout << "Colection of Games:\n";
 
-
+	for (int i = 0; i < MAX; i++)
+		collection[i].Display();
 	return 0;
 }
