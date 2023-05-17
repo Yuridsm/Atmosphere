@@ -23,5 +23,6 @@ int main() {
 
 	for (int i = 0; i < MAX; i++)
 		collection[i].Display();
+
 	return 0;
 }
