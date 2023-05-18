@@ -10,22 +10,27 @@ Game2::Game2()
 	hour = 0;
 	cost = 0;
 
-	cout << "    - Building Game2" << name << "with Default Constructor" << endl;
+	//cout << "    - Building Game2" << name << "with Default Constructor" << endl;
 }
 
-Game2::Game2(const string & title, float value)
+Game2::Game2(const string & title, float value, int time)
 {
 	name = title;
 	price = value;
-	hour = 0;
+	hour = time;
 	cost = value;
 
-	cout << "    - Building Game2" << title << "with Custom Constructor" << endl;
+	//cout << "    - Building Game2" << title << "with Custom Constructor" << endl;
+}
+
+const Game2& Game2::Compare(const Game2& game) const
+{
+	return TheMostPlayed(*this, game);
 }
 
 Game2::~Game2()
 {
-	cout << "    - Destruing Game2 " << name << endl;
+	//cout << "    - Destruing Game2 " << name << endl;
 }
 
 void Game2::Get(const string& title, float price)
@@ -51,4 +56,20 @@ void Game2::Play(int time)
 void Game2::Display() const
 {
 	std::cout << name << std::endl;
+}
+
+const Game2& TheMostPlayed(const Game2& a, const Game2& b)
+{
+	if (a.Hours() > b.Hours())
+		return a;
+
+	return b;
+}
+
+const Game2& TheLeastPlayed(const Game2& a, const Game2& b)
+{
+	if (a.Cost() > b.Cost())
+		return a;
+
+	return b;
 }
