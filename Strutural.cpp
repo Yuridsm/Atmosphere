@@ -5,46 +5,29 @@
 
 using namespace std;
 
-Game Get(const string& title, float price)
+void Update(GameWithStruct * self, float price)
 {
-	Game game;
+	self->price = price;
 
-	game.name = title;
-	game.price = price;
-	game.hour = 0;
-	game.cost = price;
-
-	return game;
+	Calculate(self);
 }
 
-void Update(Game& game, float price)
+void Play(GameWithStruct * self, int time)
 {
-	game.price = price;
-
-	if (game.hour > 0)
-		game.cost = game.price / game.cost;
+	self->hour += time;
+	Calculate(self);
 }
 
-void Play(Game& game, int time)
+void Display(const GameWithStruct * self)
 {
-	game.hour += time;
-
-	if (game.hour > 0)
-		game.cost = game.price / game.hour;
+	cout << self->name << "R$"
+		<< self->price << " "
+		<< self->hour << "h = R$"
+		<< self->cost << "/h\n";
 }
 
-void Display(const Game& game)
+void Calculate(GameWithStruct * self)
 {
-	cout << game.name << "R$"
-		<< game.price << " "
-		<< game.hour << "h = R$"
-		<< game.cost << "/h\n";
-}
-
-void Execute()
-{
-	Game minecraft;
-
-	minecraft = Get("Minecraft", 199.99f);
-	Display(minecraft);
+	if (self->hour > 0)
+		self->cost = self->price / self->hour;
 }

@@ -33,5 +33,9 @@ int main() {
 
 	test.Display();
 
+	// Working with Registers
+
+
+
 	return 0;
 }

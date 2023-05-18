@@ -2,18 +2,20 @@
 #ifndef STRUCTURAL
 #define STRUCTURAL
 
-struct Game
+using namespace std;
+
+struct GameWithStruct
 {
-	std::string name;
+	string name;
 	float price;
 	int hour;
 	float cost;
+
 };
 
-Game Get(const std::string& title, float price);
-void Update(Game& game, float price);
-void Play(Game& game, int time);
-void Display(const Game& game);
-void Execute();
+void Calculate(GameWithStruct * self);
+void Update(GameWithStruct* self, float price);
+void Play(GameWithStruct* self, int time);
+void Display(const GameWithStruct& game);
 
 #endif
