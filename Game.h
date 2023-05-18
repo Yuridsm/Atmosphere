@@ -16,7 +16,10 @@ public:
 	Game2(const string & title, float value, int time);
 	~Game2();
 
-	const Game2& Compare(const Game2& game) const;
+	const Game2& Compare(
+		const Game2& game,
+		const Game2& (func)(const Game2&, const Game2&)
+		) const;
 
 	void Get(const string & title, float price);
 	void Update(float price);

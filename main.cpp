@@ -26,10 +26,10 @@ int main() {
 
 	cout << "\tTesting..." << endl;
 
-	Game2 go{ "Algum jogo aí", 4.4f, 36 };
-	Game2 gq{ "Outro jogo aí", 1.4f, 9 };
+	Game2 go{ "Minecraft", 4.45f, 36 };
+	Game2 gq{ "Top Gun Maverick", 19.99f, 9 };
 
-	const Game2& test = go.Compare(gq);
+	const Game2& test = go.Compare(gq, TheLeastPlayed);
 
 	test.Display();
 

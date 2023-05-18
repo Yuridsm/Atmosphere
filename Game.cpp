@@ -23,9 +23,12 @@ Game2::Game2(const string & title, float value, int time)
 	//cout << "    - Building Game2" << title << "with Custom Constructor" << endl;
 }
 
-const Game2& Game2::Compare(const Game2& game) const
+const Game2& Game2::Compare(
+	const Game2& game,
+	const Game2& (func)(const Game2&, const Game2&)
+) const
 {
-	return TheMostPlayed(*this, game);
+	return func(*this, game);
 }
 
 Game2::~Game2()
