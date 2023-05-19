@@ -1,41 +1,65 @@
-#include <openssl/evp.h>
-#include <openssl/rand.h>
-#include <string>
 #include <iostream>
-#include <iomanip>
-
-#include "Game.h"
 
 using namespace std;
 
-const int MAX = 3;
+class IOrder
+{
+public:
+	virtual void Execute() = 0;
+};
 
-int main() {
-
-	Game2 collection[MAX] =
+class OrderA : public IOrder
+{
+public:
+	void Execute() override
 	{
-		Game2("qwe", 4.4f, 1),
-		Game2("asd", 4.4f, 2),
-		Game2("zxc", 4.4f, 3),
-	};
+		std::cout << "Executing A\n";
+	}
+};
 
-	cout << "Colection of Games:\n";
+class OrderB : public IOrder
+{
+public:
+	void Execute() override
+	{
+		std::cout << "Executing B\n";
+	}
+};
 
-	//for (int i = 0; i < MAX; i++)
-		//collection[i].Display();
+class OrderC : public IOrder
+{
+public:
+	void Execute() override
+	{
+		std::cout << "Executing C\n";
+	}
+};
 
-	cout << "\tTesting..." << endl;
+class OrderUseCase
+{
+private:
+	IOrder& _order;
 
-	Game2 go{ "Minecraft", 4.45f, 36 };
-	Game2 gq{ "Top Gun Maverick", 19.99f, 9 };
+public:
+	OrderUseCase(IOrder& order) : _order(order) 
+	{
 
-	const Game2& test = go.Compare(gq, TheLeastPlayed);
+	}
 
-	test.Display();
+	void Execute()
+	{
+		_order.Execute();
+	}
+};
 
-	// Working with Registers
+int main()
+{
+	OrderA orderA = OrderA();
+	OrderB orderB = OrderB();
+	OrderC orderC = OrderC();
 
-
+	OrderUseCase useCase = OrderUseCase(orderB);
+	useCase.Execute();
 
 	return 0;
 }
