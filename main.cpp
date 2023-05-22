@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "Stack.h"
+
 using namespace std;
 
 class IOrder
@@ -60,6 +62,8 @@ int main()
 
 	OrderUseCase useCase = OrderUseCase(orderB);
 	useCase.Execute();
+
+	Stack myStack = Stack();
 
 	return 0;
 }
