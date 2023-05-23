@@ -31,6 +31,8 @@
     <ClCompile Include="Pointers.cpp" />
     <ClCompile Include="Rect.cpp" />
     <ClCompile Include="Smartphone.cpp" />
+    <ClCompile Include="src\UseCase\SignUpUseCase.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="Structss.cpp" />
     <ClCompile Include="Strutural.cpp" />
     <ClCompile Include="Types.cpp" />
@@ -43,6 +45,8 @@
     <ClInclude Include="IntroToPointers.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Point.h" />
+    <ClInclude Include="src\UseCase\SignUpUseCase.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="Structural.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

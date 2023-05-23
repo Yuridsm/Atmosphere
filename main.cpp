@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "Stack.h"
+#include "src/UseCase/SignUpUseCase.h"
 
 using namespace std;
 
@@ -56,14 +57,10 @@ public:
 
 int main()
 {
-	OrderA orderA = OrderA();
-	OrderB orderB = OrderB();
-	OrderC orderC = OrderC();
-
-	OrderUseCase useCase = OrderUseCase(orderB);
-	useCase.Execute();
-
-	Stack myStack = Stack();
+	SignUpUseCase mySignUp = SignUpUseCase();
+	string mail = "yuri@mail.com";
+	string password = "12345678";
+	mySignUp.Execute(mail, password);
 
 	return 0;
 }
