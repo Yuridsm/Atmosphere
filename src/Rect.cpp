@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Point.h"
+#include "Headers/Point.h"
 
 class Rect
 {

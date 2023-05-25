@@ -1,4 +1,4 @@
-#include "Point.h"
+#include "Headers/Point.h"
 
 void Point::Translate(int dx, int dy)
 {

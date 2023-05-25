@@ -1,4 +1,4 @@
-#include "Coord.h"
+#include "Headers/Coord.h"
 
 void Coord::Translate(int dx, int dy)
 {

@@ -1,8 +1,7 @@
 #include <iostream>
 
-#include "Stack.h"
-#include "src/UseCase/SignUpUseCase.h"
-
+#include "Headers/Stack.h"
+#include "UseCase/SignUpUseCase.h"
 
 using namespace std;
 
@@ -58,10 +57,7 @@ public:
 
 int main()
 {
-	SignUpUseCase mySignUp = SignUpUseCase();
-	string mail = "yuri@mail.com";
-	string password = "12345678";
-	mySignUp.Execute(mail, password);
+	
 
 	return 0;
 }

@@ -19,35 +19,35 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Coord.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Intro.cpp" />
-    <ClCompile Include="IntroToPointers.cpp" />
-    <ClCompile Include="lecture.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NameDeclaration.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Pointers.cpp" />
-    <ClCompile Include="Rect.cpp" />
-    <ClCompile Include="Smartphone.cpp" />
+    <ClCompile Include="src\Coord.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Intro.cpp" />
+    <ClCompile Include="src\IntroToPointers.cpp" />
+    <ClCompile Include="src\lecture.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\NameDeclaration.cpp" />
+    <ClCompile Include="src\Person.cpp" />
+    <ClCompile Include="src\Point.cpp" />
+    <ClCompile Include="src\Pointers.cpp" />
+    <ClCompile Include="src\Rect.cpp" />
+    <ClCompile Include="src\Smartphone.cpp" />
     <ClCompile Include="src\UseCase\SignUpUseCase.cpp" />
-    <ClCompile Include="Stack.cpp" />
-    <ClCompile Include="Structss.cpp" />
-    <ClCompile Include="Strutural.cpp" />
-    <ClCompile Include="Types.cpp" />
-    <ClCompile Include="VirtualFunctionCpp.cpp" />
-    <ClCompile Include="YoutubeChannel.cpp" />
+    <ClCompile Include="src\Stack.cpp" />
+    <ClCompile Include="src\Structss.cpp" />
+    <ClCompile Include="src\Strutural.cpp" />
+    <ClCompile Include="src\Types.cpp" />
+    <ClCompile Include="src\VirtualFunctionCpp.cpp" />
+    <ClCompile Include="src\YoutubeChannel.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Coord.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="IntroToPointers.h" />
-    <ClInclude Include="Person.h" />
-    <ClInclude Include="Point.h" />
+    <ClInclude Include="src\Headers\Coord.h" />
+    <ClInclude Include="src\Headers\Game.h" />
+    <ClInclude Include="src\Headers\IntroToPointers.h" />
+    <ClInclude Include="src\Headers\Person.h" />
+    <ClInclude Include="src\Headers\Point.h" />
     <ClInclude Include="src\UseCase\SignUpUseCase.h" />
-    <ClInclude Include="Stack.h" />
-    <ClInclude Include="Structural.h" />
+    <ClInclude Include="src\Headers\Stack.h" />
+    <ClInclude Include="src\Headers\Structural.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
