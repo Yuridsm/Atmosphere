@@ -1,8 +1,15 @@
 #include "Headers/Stack.h"
 
-Stack::Stack()
+Stack::Stack(int length)
 {
+	items = new Item[length]; // On Stack memory
+	max = length;
 	top = 0;
+}
+
+Stack::~Stack()
+{
+	delete[] items;
 }
 
 bool Stack::Empty() const
@@ -12,12 +19,12 @@ bool Stack::Empty() const
 
 bool Stack::Full() const
 {
-	return top == Stack::MAX;
+	return top == max;
 }
 
 bool Stack::Push(const Item& item)
 {
-	if (top < Stack::MAX)
+	if (top < max)
 	{
 		items[top++] = item;
 		return true;

@@ -3,12 +3,13 @@ using Item = char;
 class Stack
 {
 private:
-	enum { MAX = 10 };
-	Item items[MAX];
+	Item * items;
 	int top;
+	int max; // capacity
 
 public:
-	Stack();
+	Stack(int length);
+	~Stack();
 
 	bool Empty() const;
 	bool Full() const;
