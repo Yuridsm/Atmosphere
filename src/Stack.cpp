@@ -1,4 +1,13 @@
+#include <iostream>
+
 #include "Headers/Stack.h"
+
+Stack::Stack() 
+{
+	items = new Item[1];
+	max = 1;
+	top = 0;
+}
 
 Stack::Stack(int length)
 {
@@ -17,19 +26,38 @@ bool Stack::Empty() const
 	return top == 0;
 }
 
-bool Stack::Full() const
+void Stack::Expand()
 {
-	return top == max;
+	std::cout << " Expaning capacity to " << max << std::endl;
+
+	// Create new space
+	Item* vector = new Item[2 * max + 1];
+
+	// Copy items to new space
+	for (int i = 0; i < max; i++)
+		vector[i] = items[i];
+
+	// Free old space
+	delete[] items;
+
+	// Update attributes
+	items = vector;
+	max = 2 * max + 1;
+
+	std::cout << " para " << max << std::endl;
 }
 
-bool Stack::Push(const Item& item)
+void Stack::Push(const Item& item)
 {
-	if (top < max)
-	{
-		items[top++] = item;
-		return true;
-	}
-	return false;
+	std::cout << "Pushing [" << item << "]" << std::endl;
+
+	// Whether the stack is full
+	if (top == max)
+		Expand();
+
+	items[top++] = item;
+
+	std::cout << " [" << item << "] Pushed" << std::endl;
 }
 
 bool Stack::Pop(Item& item)

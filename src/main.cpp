@@ -57,23 +57,17 @@ public:
 
 int main()
 {
-	Stack stack { 5 };
+	Stack stack;
+
 	stack.Push('A');
 	stack.Push('H');
-	stack.Push('L');
-	stack.Push('I');
-	stack.Push('P');
 
-	/*while (!stack.Empty())
+	while (!stack.Empty())
 	{
 		Item i;
 		stack.Pop(i);
 		cout << i << endl;
-	}*/
-
-	Item i;
-	while (stack.Pop(i))
-		cout << i << endl;
+	}
 
 	return 0;
 }
