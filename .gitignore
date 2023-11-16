@@ -5,3 +5,4 @@ bin/
 x64/
 Atmosphere.vcxproj.filters
 Atmosphere.vcxproj.user
+*.exe

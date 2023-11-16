@@ -57,6 +57,7 @@ public:
 
 int main()
 {
+	std::cout << "I'm running..." << std::endl;
 	Stack stack;
 
 	stack.Push('A');

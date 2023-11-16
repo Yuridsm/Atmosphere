@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "Headers/Structural.h";
+#include "Headers/Structural.h"
 
 void Update(GameWithStruct * self, float price)
 {
