@@ -3,10 +3,10 @@
 
 SignUpUseCase::SignUpUseCase()
 {
-
 }
 
 void SignUpUseCase::Execute(string & email, string & password)
 {
 	std::cout << "Email: " << email << "\n";
+	std::cout << "Password: " << password << "\n";
 }
